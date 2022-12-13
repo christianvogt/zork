@@ -1,7 +1,7 @@
 FROM fedora
 
 # Zork 1
-RUN "curl http://www.infocom-if.org/downloads/zorki.hqx"
+RUN curl http://www.infocom-if.org/downloads/zorki.hqx
 
 # Zork 2
 # curl http://www.infocom-if.org/downloads/zorkii.hqx
@@ -10,7 +10,7 @@ RUN "curl http://www.infocom-if.org/downloads/zorki.hqx"
 # curl http://www.infocom-if.org/downloads/zorkiii.hqx
 
 # sudo apt-get install frotz uudeview
-RUN dnf install frotz uudeview
+RUN dnf install -y frotz uudeview
 
 # uncompress
 RUN uudeview -i zorki.hqx
