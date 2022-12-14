@@ -1,4 +1,4 @@
 # zork
 
-try to run zork in a container
+try to run zork in a container.
 
